@@ -1,0 +1,5 @@
+Pin,Name,Data Type,Semantics,Min,Max,Default,Units,Use in Automations
+V1,V1,Integer,,1,10,1,--,None
+V2,V2,Integer,,0,10,0,--,None
+V3,V3,Integer,,2,10,2,--,None
+V0,Motor Button,Integer,,0,1,0,--,Action
