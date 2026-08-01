@@ -1,0 +1,11 @@
+.DS_Store
+*.gcode
+*.hex
+*.bin
+build/
+.pio/
+
+# Original working copies (see docs/ for the tracked, cleanly-named versions)
+/block_final.pdf
+/block_final_v4.png
+/Solar Powered Pet Feeder.csv
