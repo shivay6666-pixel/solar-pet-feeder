@@ -1,0 +1,21 @@
+Pin,Name,Data Type,Min,Max,Default,Used by,Purpose
+V0,Motor Button,Integer,0,1,0,Feeder,Feed Now button (push)
+V1,Feed1Hour,Integer,0,23,,Feeder,Feeding slot 1 hour
+V2,Feed1Minute,Integer,0,59,,Feeder,Feeding slot 1 minute
+V3,BowlWeight,Double,0,5000,0,Feeder,Food tray weight in grams (read-only display)
+V4,TareScale,Integer,0,1,0,Feeder,Zero the scale (tray must be empty)
+V5,Feed2Hour,Integer,0,23,,Feeder,Feeding slot 2 hour
+V6,Feed2Minute,Integer,0,59,,Feeder,Feeding slot 2 minute
+V7,Feed3Hour,Integer,0,23,,Feeder,Feeding slot 3 hour
+V8,Feed3Minute,Integer,0,59,,Feeder,Feeding slot 3 minute
+V9,FeedDays,Integer,0,127,127,Feeder,Day bitmask: Sun=1 Mon=2 Tue=4 Wed=8 Thu=16 Fri=32 Sat=64
+V10,PortionSize,Integer,1,10,1,Feeder,Motor run time per feed in seconds
+V11,AutoFeedOn,Integer,0,1,1,Feeder,Master pause switch for scheduled feeding
+V12,ReverseUnjam,Integer,0,1,0,Feeder,Reverse the motor 1.5 s to clear a jam
+V13,BatteryPercent,Integer,0,100,0,Planned (module 07),Battery charge estimate
+V14,BatteryVolts,Double,0,20,0,Planned (module 07),Battery pack voltage
+V15,WifiRssi,Integer,-100,0,0,Reference (module 10d),WiFi signal strength in dBm
+V16,UptimeMin,Integer,0,,0,Reference (module 10d),Minutes since last boot
+V17,BowlVisits,Integer,0,,0,Planned (module 04),Animal visits counted by the IR sensor
+V18,JamFault,Integer,0,1,0,Planned (module 08),1 = motor jam could not be cleared
+V19,TestAlert,Integer,0,1,0,Reference (module 10c),Button that sends a test notification

@@ -9,3 +9,6 @@ build/
 /block_final.pdf
 /block_final_v4.png
 /Solar Powered Pet Feeder.csv
+
+# Local credentials, never commit
+secrets.h
