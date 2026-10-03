@@ -28,7 +28,7 @@
     V10  Portion Size    integer 1-10, seconds of motor run
     V11  Auto-Feed On    switch 0-1
 
-  Setup: copy secrets.example.h to secrets.h and fill in your own values.
+  Setup: copy firmware/secrets.example.h to firmware/secrets.h, fill it in, run firmware/setup_secrets.sh.
   Wiring: motor driver ENB D5, IN3 D6, IN4 D7 (see 03_motor).
 */
 

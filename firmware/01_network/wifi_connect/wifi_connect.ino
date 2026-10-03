@@ -6,7 +6,7 @@
   board reach my router?" from every other possible problem.
 
   Setup:
-    1. Copy secrets.example.h to secrets.h and fill in your own values.
+    1. Copy firmware/secrets.example.h to firmware/secrets.h, fill it in, run firmware/setup_secrets.sh.
     2. Board: NodeMCU 1.0 (ESP-12E Module), upload speed 115200.
 
   IMPORTANT: the ESP8266 only has a 2.4 GHz radio. If your router broadcasts

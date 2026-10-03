@@ -46,17 +46,18 @@ on its own. `00_full_system` is the integrated firmware that runs the real feede
 known-good patterns in the full firmware, but it has not been run on its own. Modules 04, 06, 07 and 08 are still to be built
 and merged into the full firmware.
 
-`legacy/` holds earlier versions kept for the project history.
+Earlier versions are in the git history.
 
 ## Quick start
 
 1. Install the Arduino IDE (or `arduino-cli`) and the **ESP8266** board package.
    Board: *NodeMCU 1.0 (ESP-12E Module)*, upload speed 115200.
 2. Libraries (Library Manager): **Blynk**, **LiquidCrystal_I2C**, **HX711** (Rob Tillaart).
-3. Open a sketch from a folder above. For any sketch containing `secrets.example.h`:
-   copy it to `secrets.h` in the same folder and fill in your own WiFi name,
-   password and Blynk values. `secrets.h` is git-ignored and must never be committed.
-4. Upload. Open the Serial Monitor at **115200** baud.
+3. Credentials: copy `firmware/secrets.example.h` to `firmware/secrets.h`, fill in your own
+   WiFi name, password and Blynk values, then run `firmware/setup_secrets.sh`. It copies the
+   file into each sketch that needs it (Arduino only sees files inside the sketch folder).
+   All `secrets.h` files are git-ignored and must never be committed.
+4. Open a sketch from a folder above and upload. Open the Serial Monitor at **115200** baud.
 
 Suggested bring-up order on new hardware: `02` board, `01` wifi scan and connect,
 `09` LCD, `03` motor, `05` load cell, then `10` Blynk, then `00` full system.

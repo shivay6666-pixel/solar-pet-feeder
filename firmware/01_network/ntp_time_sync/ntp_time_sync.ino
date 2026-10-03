@@ -6,7 +6,7 @@
 
   Uses the ESP8266 core's built-in configTime(), so no extra library needed.
 
-  Setup: copy secrets.example.h to secrets.h and fill in your own values.
+  Setup: copy firmware/secrets.example.h to firmware/secrets.h, fill it in, run firmware/setup_secrets.sh.
 */
 
 #include <ESP8266WiFi.h>

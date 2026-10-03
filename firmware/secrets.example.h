@@ -1,6 +1,7 @@
 // secrets.example.h
 // ------------------------------------------------------------------
-// 1. Copy this file to "secrets.h" in the same folder as the sketch.
+// 1. Copy this file to firmware/secrets.h and fill in your values, then run
+//    firmware/setup_secrets.sh. It copies secrets.h into every sketch that needs it.
 // 2. Replace the placeholders with your own values.
 // 3. NEVER commit secrets.h (it is listed in .gitignore).
 // ------------------------------------------------------------------

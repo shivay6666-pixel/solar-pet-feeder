@@ -15,7 +15,7 @@
   Board: NodeMCU 1.0 (ESP-12E Module), upload speed 115200.
 */
 #define BLYNK_PRINT Serial
-#include "secrets.h"   // WiFi + Blynk credentials (copy secrets.example.h to secrets.h)
+#include "secrets.h"   // WiFi + Blynk credentials (run firmware/setup_secrets.sh)
 
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>

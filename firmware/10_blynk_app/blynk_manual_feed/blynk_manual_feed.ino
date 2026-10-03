@@ -10,7 +10,7 @@
        Feeder") with a datastream  V0  "Motor Button", Integer, min 0, max 1.
     2. Add a Button widget on V0, mode PUSH.
     3. Create a device from the template and copy its Template ID and
-       Auth Token into secrets.h (copy secrets.example.h first).
+       Auth Token into firmware/secrets.h (see setup_secrets.sh).
 
   Wiring: ENB D5, IN3 D6, IN4 D7 (see 03_motor).
 
